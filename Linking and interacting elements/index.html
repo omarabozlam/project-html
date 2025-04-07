@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Linking and interacting elements</title>
+  </head>
+  <body>
+    <!--Links – Anchor Tag-->
+    <a href="https://google.com">google</a>
+    <!-- يفتح المتصفح داخل الصفحة-->
+    <a href="https://google.com" target="_blank">google</a>
+    <!-- يفتح المتصفح خارج الصفحة-->
+    <a href="https://google.com" target="_blank" title="to go google">google</a>
+    <a href="#ysaf" title="to go google">omar</a>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p>omar abozlam</p>
+    <p id="ysaf">nasser omar abozlam</p>
+    <p>omar abozlam</p>
+    <a href="mailto:o@nn.sa">contect me</a>
+
+    <!--form-->
+
+    <!-- Input Types And Label -->
+    <form>
+      <div>
+        <label>username</label>
+        <input type="text" />
+      </div>
+      <hr />
+      <div>
+        <label>password</label>
+        <input type="password" />
+      </div>
+      <input type="submit" />
+    </form>
+
+    <!--Action, Name, Method Required, Placeholder, Value-->
+    <hr />
+    <form action="" method="POST">
+      <div>
+        <label>Username</label>
+        <input type="text" required placeholder="Username" name="user" />
+      </div>
+      <br />
+      <div>
+        <label>Subject</label>
+        <input type="text" name="subject" />
+      </div>
+      <br />
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          required
+          placeholder="Write A Complex Password"
+          name="pass"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          required
+          placeholder="Write A Valid Email"
+          value="o@nn.sa"
+          name="mail"
+        />
+      </div>
+      <input type="submit" value="Save" />
+    </form>
+
+    <!--Hidden, Reset, Color, Range, Number-->
+    <hr />
+    <form>
+      <input type="hidden" />
+      <div>
+        <label>username</label>
+        <input type="text" required placeholder="username" />
+      </div>
+      <div>
+        <input type="reset" value="Reset" />
+      </div>
+      <div>
+        <label>color</label>
+        <input type="color" value="color" />
+      </div>
+      <div>
+        <label>range</label>
+        <input
+          type="range"
+          name="range"
+          min="0"
+          max="100"
+          step="20"
+          value="20"
+        />
+      </div>
+      <div>
+        <label>number</label>
+        <input
+          type="number"
+          name="number"
+          min="0"
+          max="100"
+          step="20"
+          value="20"
+        />
+      </div>
+    </form>
+
+    <!--Read Only, Disabled, Auto Focus-->
+    <form action="" method="GET">
+      <input type="hidden" value="Osama" />
+      <div>
+        <label>Username</label>
+        <input
+          type="text"
+          required
+          placeholder="Username"
+          name="user"
+          value="Osama"
+          readonly
+        />
+      </div>
+      <br />
+      <div>
+        <label>Subject</label>
+        <input type="text" name="subject" autofocus />
+      </div>
+      <br />
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          required
+          placeholder="Write A Complex Password"
+          name="pass"
+          minlength="10"
+          maxlength="20"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          required
+          placeholder="Write A Valid Email"
+          value="o@nn.sa"
+          name="mail"
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label>Color</label>
+        <input type="color" name="Color" />
+      </div>
+      <br />
+      <div>
+        <label>Range</label>
+        <input
+          type="range"
+          name="range"
+          min="0"
+          max="100"
+          step="20"
+          value="80"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Number</label>
+        <input type="number" name="number" min="10" max="100" step="10" />
+      </div>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Save" />
+    </form>
+
+    <!--Radio And Checkbox-->
+
+    <form>
+      <div>
+        <input type="radio" name="os" value="windows" checked />
+        <label>windows</label>
+      </div>
+      <div>
+        <input id="lin" type="radio" name="os" value="linux" />
+        <label for="lin">linux</label>
+      </div>
+      <div>
+        <input type="radio" name="os" value="mac" />
+        <label>mac</label>
+      </div>
+      <div>
+        <input id="win1" type="checkbox" name="os" value="windows1" checked />
+        <label for="win1"> windows</label>
+      </div>
+      <div>
+        <input type="checkbox" name="os" value="linux" />
+        <label>linux</label>
+      </div>
+      <div>
+        <input type="checkbox" name="os" value="mac" />
+        <label>mac</label>
+      </div>
+    </form>
+
+    <!-- Select And Textarea-->
+    <form>
+      <label for="book">choose book</label>
+      <select name="book" id="book" multiple>
+        <optgroup label="omarabozlam">
+          <option value="1">book1</option>
+          <option value="2">book2</option>
+          <option value="3">book3</option>
+        </optgroup>
+        <optgroup label="omarabonessar">
+          <option value="4">book4</option>
+          <option value="5">book5</option>
+          <option value="6">book6</option>
+        </optgroup>
+      </select>
+      <textarea name="subgect" cols="10" rows="10"></textarea>
+    </form>
+    <hr />
+    <!-- File, Search, URL, Time-->
+    <form>
+      <div>
+        <label>ubload</label>
+        <input type="file" />
+      </div>
+      <div>
+        <label>search</label>
+        <input type="search" />
+      </div>
+      <div>
+        <label>url</label>
+        <input type="url" />
+      </div>
+      <div>
+        <label>date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label>time</label>
+        <input type="time" />
+      </div>
+      <div>
+        <label>month</label>
+        <input type="month" />
+      </div>
+      <input list="programing" name="prog" />
+      <datalist id="programing">
+        <option value="python"></option>
+        <option value="c++"></option>
+        <option value="jave"></option>
+        <option value="c"></option>
+        <option value="css"></option>
+      </datalist>
+    </form>
+
+    <!--Q, BlockQuote, Wbr, Bdi, Button-->
+    <q>This Is Wise Word</q>
+    <blockquote>This Is Wise Word</blockquote>
+    <button>Click</button>
+    <p>السلام 2 Welcome</p>
+    <p><bdi>السلام</bdi> 2 Welcome</p>
+  </body>
+</html>
